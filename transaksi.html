@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout – Horizon Jacket</title>
+</head>
+<body style="
+  background-color: #f2f6fa;
+  color: #1b2845;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+">
+
+  <!-- HEADER -->
+  <header style="background-color: #1a2b49; color: #e0e8ff; padding: 20px; text-align: center;">
+    <h1 style="margin: 0; font-size: 2.4em; font-weight: normal;">Horizon Jacket</h1>
+    <p style="margin-top: 8px; font-style: italic; opacity: 0.9;">Langkah terakhir sebelum jaketmu tiba</p>
+  </header>
+
+  <!-- MENU -->
+  <nav style="background-color: #233659; padding: 12px; text-align: center; color: #c2d4ec;">
+    <a href="index.html" style="color: white; text-decoration: none; margin: 0 15px; font-weight: bold;">Produk</a>
+    <a href="tentang.html" style="color: #d1e0f0; text-decoration: none; margin: 0 15px;">Tentang</a>
+  </nav>
+
+  <!-- MARQUEE -->
+  <marquee behavior="scroll" direction="left" style="
+    background-color: #e8f0f8;
+    color: #2c3e5a;
+    padding: 10px;
+    font-size: 0.95em;
+    border-bottom: 1px solid #cfd8e3;
+  ">
+    🌊 Pastikan data pengiriman benar agar jaketmu sampai tepat waktu!
+  </marquee>
+
+  <!-- LAYOUT: CONTENT + SIDEBAR KANAN -->
+  <div style="display: flex; padding: 20px; gap: 25px; max-width: 1300px; margin: 0 auto;">
+
+    <!-- CONTENT UTAMA -->
+    <main style="flex: 1;">
+      <h2 style="color: #1a2b49; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px dashed #a9b9d8;">
+        Formulir Pemesanan
+      </h2>
+
+      <form style="background: white; padding: 25px; border-radius: 8px; border: 1px solid #dce6f2;">
+
+        <!-- DATA PEMBELI -->
+        <h3 style="color: #1a2b49; margin-top: 0;">Data Pribadi</h3>
+        <p>
+          <label for="nama" style="display: block; margin-bottom: 5px; font-weight: bold;">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" required
+            style="width: 100%; padding: 10px; border: 1px solid #b0c4de; border-radius: 4px; font-family: Georgia;">
+        </p>
+        <p>
+          <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold;">Email</label>
+          <input type="email" id="email" name="email" required
+            style="width: 100%; padding: 10px; border: 1px solid #b0c4de; border-radius: 4px; font-family: Georgia;">
+        </p>
+        <p>
+          <label for="hp" style="display: block; margin-bottom: 5px; font-weight: bold;">No. Handphone</label>
+          <input type="tel" id="hp" name="hp" required
+            style="width: 100%; padding: 10px; border: 1px solid #b0c4de; border-radius: 4px; font-family: Georgia;">
+        </p>
+
+        <!-- ALAMAT PENGIRIMAN -->
+        <h3 style="color: #1a2b49; margin-top: 25px;">Alamat Pengiriman</h3>
+        <p>
+          <label for="alamat" style="display: block; margin-bottom: 5px; font-weight: bold;">Alamat Lengkap</label>
+          <textarea id="alamat" name="alamat" rows="3" required
+            style="width: 100%; padding: 10px; border: 1px solid #b0c4de; border-radius: 4px; font-family: Georgia;"></textarea>
+        </p>
+        <p>
+          <label for="kota" style="display: block; margin-bottom: 5px; font-weight: bold;">Kota / Kabupaten</label>
+          <input type="text" id="kota" name="kota" required
+            style="width: 100%; padding: 10px; border: 1px solid #b0c4de; border-radius: 4px; font-family: Georgia;">
+        </p>
+        <p>
+          <label for="kodepos" style="display: block; margin-bottom: 5px; font-weight: bold;">Kode Pos</label>
+          <input type="text" id="kodepos" name="kodepos" required
+            style="width: 100%; padding: 10px; border: 1px solid #b0c4de; border-radius: 4px; font-family: Georgia;">
+        </p>
+
+        <!-- PILIHAN KURIR -->
+        <h3 style="color: #1a2b49; margin-top: 25px;">Pilih Kurir Pengiriman</h3>
+        <p>
+          <select name="kurir" required
+            style="width: 100%; padding: 10px; border: 1px solid #b0c4de; border-radius: 4px; font-family: Georgia;">
+            <option value="">-- Pilih Kurir --</option>
+            <option>JNE Regular</option>
+            <option>J&T Express</option>
+            <option>SiCepat REG</option>
+            <option>AnterAja</option>
+            <option>POS Indonesia</option>
+          </select>
+        </p>
+
+        <!-- METODE PEMBAYARAN -->
+        <h3 style="color: #1a2b49; margin-top: 25px;">Metode Pembayaran</h3>
+        <p>
+          <input type="radio" id="transfer" name="pembayaran" value="transfer" required>
+          <label for="transfer" style="margin-left: 8px;">Transfer Bank (BCA, BNI, Mandiri)</label><br>
+          <input type="radio" id="ewallet" name="pembayaran" value="ewallet">
+          <label for="ewallet" style="margin-left: 8px;">E-Wallet (GoPay, OVO, DANA)</label><br>
+          <input type="radio" id="cod" name="pembayaran" value="cod">
+          <label for="cod" style="margin-left: 8px;">COD (Bayar di Tempat)</label>
+        </p>
+
+        <!-- TOMBOL KIRIM -->
+        <br>
+        <button type="submit"
+          style="
+            background-color: #1a2b49;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            font-family: Georgia;
+            font-size: 1.05em;
+            font-weight: bold;
+            cursor: pointer;
+          ">
+          Kirim Pesanan
+        </button>
+
+      </form>
+    </main>
+
+    <!-- SIDEBAR KANAN -->
+    <aside style="width: 220px; background-color: #e9f0f7; padding: 18px; border-radius: 8px; font-size: 0.95em; box-shadow: 0 1px 4px rgba(0,0,0,0.05);">
+
+      <h3 style="color: #1a2b49; margin-top: 0; border-bottom: 1px solid #b0c4de; padding-bottom: 8px; font-size: 1.1em;">
+        Ringkasan Pesanan
+      </h3>
+      <p style="font-size: 0.95em;">
+        <strong>Produk:</strong><br>
+        Navy Classic Coat<br>
+        <strong>Ukuran:</strong> M<br>
+        <strong>Jumlah:</strong> 1<br>
+        <strong>Harga:</strong> Rp289.000<br>
+        <strong>Ongkir:</strong> GRATIS
+      </p>
+
+      <h3 style="color: #1a2b49; margin-top: 25px; border-bottom: 1px solid #b0c4de; padding-bottom: 8px; font-size: 1.1em;">
+        Butuh Bantuan?
+      </h3>
+      <p style="font-size: 0.9em; margin: 0;">
+        Hubungi kami:<br>
+        📞 0812-3456-7890<br>
+        ✉️ halo@horizonjacket.id
+      </p>
+
+    </aside>
+  </div>
+
+  <!-- FOOTER -->
+  <footer style="
+    background-color: #1a2b49;
+    color: #c2d4ec;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.95em;
+  ">
+    &copy; 2025 Horizon Jacket — Jaket untuk langit terbuka dan jalan tak berujung.
+  </footer>
+
+</body>
+</html>
